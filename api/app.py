@@ -6,7 +6,6 @@ import uuid
 from flask import Flask
 import redis
 
-
 def get_payment():
     return {
         'url': os.getenv("WEBHOOK_ADDRESS", ""),
